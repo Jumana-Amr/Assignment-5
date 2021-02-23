@@ -5,17 +5,17 @@
 
 #id_diameter {
   font-size: 90%;
-  font-family: Cascadia Mono;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .diameter {
-  font-family: Cascadia Mono;
-  font-size: 110%;
+  font-family: monospace;
+  font-size: 140%;
 }
 
 .output {
-  font-size: 150%;
-  font-family: Berlin Sans FB;
+  font-size: 110%;
+  font-family: cursive;
 }
 
 #id_shapes {
@@ -29,5 +29,4 @@
   margin-left: 500px;
   position: absolute;
   width: 300px;
-  length: 300px;
 }

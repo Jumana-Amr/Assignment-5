@@ -13,31 +13,31 @@
   </div>
 <form action="javascript:calculateAreacalculateCircumfrance()" onchange="javascript:updateForm()">
     
-    <label for="id_shapes"></label>
-    <select id="id_shapes">
+    <label for="id-shapes"></label>
+    <select id="id-shapes">
         <option value="area" selected>Area</option>
         <option value="circumference">Circumference</option>
         <option value="both">Both</option>
     </select>
     <br><br>
-    <label for="id_diameter" class="diameter">Diameter</label>
-    <input id="id_diameter" type="number" min="0" step="any">
-    <div id="id_inputs_area">
+    <label for="id-diameter" class="diameter"><strong>Diameter</strong></label>
+    <input id="id-diameter" type="number" min="0" step="any">
+    <div id="id-inputs-area">
       <h2><em>A = <sup>  1</sup>&frasl;<sub>4 </sub>&Pi;d<sup>2</sup></em></h2>
-      <img class="img" src="./Images/Area.png">
+      <img class="img" src="./Images/Area.png" alt="area">
     </div>
-    <div id="id_inputs_circumference" hidden>
+    <div id="id-inputs-circumference" hidden>
       <h2><em>C = &Pi;d</em></h2>
-      <img class="img" src="./Images/Circumference.png">
+      <img class="img" src="./Images/Circumference.png" alt="circumference">
     </div>
-    <div id="id_inputs_both" hidden>
+    <div id="id-inputs-both" hidden>
       <h2><em>A = <sup>1</sup>&frasl;<sub>4 </sub>&Pi;d<sup>2</sup></em></h2>
       <h2><em>C = &Pi;d</em></h2>
-      <img class="img" src="./Images/Area_Circ.png">
+      <img class="img" src="./Images/Area-Circ.png" alt="both">
     </div>
     <input type="submit" value="Calculate">
-    <p id="id_output_area" class="output"></p>
-    <p id="id_output_circumference" class="output"></p>
+    <p id="id-output-area" class="output"></p>
+    <p id="id-output-circumference" class="output"></p>
     <script src="script.js"></script>
 </form>
 </body>
