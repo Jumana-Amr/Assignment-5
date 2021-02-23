@@ -1,4 +1,4 @@
-function updateForm(shape) {
+function updateForm(shapes) {
   document.getElementById('id-inputs-area').hidden = true;
   document.getElementById('id-inputs-circumference').hidden = true;
   document.getElementById('id-inputs-both').hidden = true;
