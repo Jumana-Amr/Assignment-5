@@ -1,5 +1,5 @@
-const shape = document.getElementById('id-shapes').value
-function updateForm (shape) { // eslint-disable-line no-unused-vars
+function updateForm () { // eslint-disable-line no-unused-vars
+const shape = document.getElementById('id-shapes').value;
   document.getElementById('id-inputs-area').hidden = true
   document.getElementById('id-inputs-circumference').hidden = true
   document.getElementById('id-inputs-both').hidden = true
@@ -19,9 +19,10 @@ function updateForm (shape) { // eslint-disable-line no-unused-vars
 }
 let area = 0
 let circumference = 0
+function calculateAreacalculateCircumfrance () { // eslint-disable-line no-unused-vars
+const shape2 = document.getElementById('id-shapes').value;
 const diameter = document.getElementById('id-diameter').value // eslint-disable-line no-unused-vars
-function calculateAreacalculateCircumfrance (diameter) { // eslint-disable-line no-unused-vars
-  switch (shape) {
+  switch (shape2) {
     case 'area':
       document.getElementById('id-output-area').hidden = false
       area = Math.PI * 1 / 4 * diameter * diameter
