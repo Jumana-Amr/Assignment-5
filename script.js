@@ -30,7 +30,8 @@ function calculateAreacalculateCircumfrance () {
       break
     case "circumference":
         document.getElementById('id-output-circumference').hidden = false
-        circumference = Math.PI * diameter        document.getElementById('id-output-circumference').innerHTML = "Circumference = " + circumference;
+        circumference = Math.PI * diameter 
+        document.getElementById('id-output-circumference').innerHTML = "Circumference = " + circumference;
         break
         case "both":
         document.getElementById('id-output-circumference').hidden = false;
