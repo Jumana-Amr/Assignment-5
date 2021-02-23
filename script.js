@@ -1,4 +1,4 @@
-function updateForm(shapes) {
+function updateForm(shape) {
   document.getElementById('id-inputs-area').hidden = true;
   document.getElementById('id-inputs-circumference').hidden = true;
   document.getElementById('id-inputs-both').hidden = true;
@@ -30,9 +30,9 @@ function calculateAreacalculateCircumfrance(calculateAreacalculateCircumfrance) 
       break;
     case 'circumference':
       document.getElementById('id-output-circumference').hidden = false;
-    circumference = Math.PI * diameter;
+      circumference = Math.PI * diameter;
       document.getElementById('id-output-circumference').innerHTML = 'Circumference = ' + circumference;
-    break;
+      break;
     case 'both':
       document.getElementById('id-output-circumference').hidden = false;
       document.getElementById('id-output-area').hidden = false;
