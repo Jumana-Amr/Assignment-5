@@ -19,7 +19,6 @@ function updateForm (shape) {
 }
 let area = 0
 let circumference = 0
-const shape = document.getElementById('id-shapes').value
 function calculateAreacalculateCircumfrance (diameter) {
   const diameter = document.getElementById('id-diameter').value
   switch (shape) {
