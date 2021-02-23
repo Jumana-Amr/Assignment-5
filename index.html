@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Circle</title>
+</head>
+<body>
+  <div>
+  <h1 class="header">Circle</h1>
+  </div>
+<form action="javascript:calculateAreacalculateCircumfrance()" onchange="javascript:updateForm()">
+    
+    <label for="id_shapes"></label>
+    <select id="id_shapes">
+        <option value="area" selected>Area</option>
+        <option value="circumference">Circumference</option>
+        <option value="both">Both</option>
+    </select>
+    <br><br>
+    <label for="id_diameter" class="diameter">Diameter</label>
+    <input id="id_diameter" type="number" min="0" step="any">
+    <div id="id_inputs_area">
+      <h2><em>A = <sup>  1</sup>&frasl;<sub>4 </sub>&Pi;d<sup>2</sup></em></h2>
+      <img class="img" src="./Images/Area.png">
+    </div>
+    <div id="id_inputs_circumference" hidden>
+      <h2><em>C = &Pi;d</em></h2>
+      <img class="img" src="./Images/Circumference.png">
+    </div>
+    <div id="id_inputs_both" hidden>
+      <h2><em>A = <sup>1</sup>&frasl;<sub>4 </sub>&Pi;d<sup>2</sup></em></h2>
+      <h2><em>C = &Pi;d</em></h2>
+      <img class="img" src="./Images/Area_Circ.png">
+    </div>
+    <input type="submit" value="Calculate">
+    <p id="id_output_area" class="output"></p>
+    <p id="id_output_circumference" class="output"></p>
+    <script src="script.js"></script>
+</form>
+</body>
+</html>
