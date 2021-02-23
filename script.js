@@ -17,7 +17,7 @@ function updateForm(shapes) {
       break;
   }
 }
-function calculateAreacalculateCircumfrance (diameter) {
+function calculateAreacalculateCircumfrance(calculateAreacalculateCircumfrance) {
   let shape = document.getElementById('id-shapes').value;
   let area = 0;
   let circumference = 0;
