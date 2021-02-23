@@ -4,7 +4,7 @@ function updateForm () {
   document.getElementById('id-inputs-both').hidden = true
   document.getElementById('id-output-area').hidden = true
   document.getElementById('id-output-circumference').hidden = true
-  let const = document.getElementById('id-shapes').value
+  let shape = document.getElementById('id-shapes').value;
   switch (shape) {
     case "area":
       document.getElementById('id-inputs-area').hidden = false
