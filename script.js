@@ -19,7 +19,7 @@ function updateForm (shape) { // eslint-disable-line no-unused-vars
 }
 let area = 0
 let circumference = 0
-const diameter = document.getElementById('id-diameter').value
+const diameter = document.getElementById('id-diameter').value  // eslint-disable-line no-unused-vars
 function calculateAreacalculateCircumfrance (diameter) { // eslint-disable-line no-unused-vars
   switch (shape) {
     case 'area':
