@@ -1,4 +1,4 @@
-function updateForm (updateForm) {
+function updateForm () {
   document.getElementById('id-inputs-area').hidden = true;
   document.getElementById('id-inputs-circumference').hidden = true;
   document.getElementById('id-inputs-both').hidden = true;
@@ -17,16 +17,16 @@ function updateForm (updateForm) {
       break
   }
 }  
-function calculateAreacalculateCircumfrance (calculateAreacalculateCircumfrance) {
-  let const = document.getElementById('id-shapes').value;
-  let area = 0
-  let circumference = 0
-  let const = document.getElementById('id-diameter').value
+function calculateAreacalculateCircumfrance () {
+  let shape = document.getElementById('id-shapes').value;
+  let area = 0;
+  let circumference = 0;
+  let diameter = document.getElementById('id-diameter').value
   switch (shape) {
     case 'area':
       document.getElementById('id-output-area').hidden = false
       area = Math.PI * 1 / 4 * diameter * diameter
-      document.getElementById('id-output-area').innerHTML = Area = ' + area;
+      document.getElementById('id-output-area').innerHTML = 'Area = ' + area;
       break
     case 'circumference':
       document.getElementById('id-output-circumference').hidden = false
@@ -39,7 +39,7 @@ function calculateAreacalculateCircumfrance (calculateAreacalculateCircumfrance)
       area = Math.PI * 1 / 4 * diameter * diameter
       circumference = Math.PI * diameter
       document.getElementById('id-output-circumference').innerHTML = 'Circumference = ' + circumference
-        document.getElementById('id-output-area').innerHTML = 'Area = ' + area
+      document.getElementById('id-output-area').innerHTML = 'Area = ' + area
         break
   }
 }
