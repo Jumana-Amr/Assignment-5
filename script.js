@@ -1,6 +1,5 @@
 const shape = document.getElementById('id-shapes').value
-const diameter = document.getElementById('id-diameter').value
-function updateForm (shape) {
+function updateForm (shape) { // eslint-disable-line no-unused-vars
   document.getElementById('id-inputs-area').hidden = true
   document.getElementById('id-inputs-circumference').hidden = true
   document.getElementById('id-inputs-both').hidden = true
@@ -20,7 +19,8 @@ function updateForm (shape) {
 }
 let area = 0
 let circumference = 0
-function calculateAreacalculateCircumfrance (diameter) {
+const diameter = document.getElementById('id-diameter').value
+function calculateAreacalculateCircumfrance (diameter) { // eslint-disable-line no-unused-vars
   switch (shape) {
     case 'area':
       document.getElementById('id-output-area').hidden = false
